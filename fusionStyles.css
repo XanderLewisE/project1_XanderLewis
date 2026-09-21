@@ -1,0 +1,76 @@
+/* fusionStyles.css - single stylesheet for all Food Fusion pages */
+ 
+/* Step 2: page background */
+body {
+  background-color: #f2efea;
+}
+ 
+/* A. Headings (element selector) */
+h1, h2, h3, h4, h5, h6 {
+  background-color: #d7e1f2;
+  font-weight: bold;
+  color: #1f2123;
+}
+ 
+/* B + H. Dish divs (class selector) */
+.dish {
+  background-color: rgb(247, 185, 86);
+  padding: 10px;
+  margin: 10px;
+  border: 2px dashed #8b2e16;
+  border-radius: 12px; /* H. rounded corners */
+}
+ 
+/* C. Header and footer background (compound element selector) */
+header, footer {
+  background-color: #bc8e43;
+}
+ 
+/* D. Footer text ~12px using rem (12px / 16px = 0.75rem) */
+footer {
+  font-size: 0.75rem;
+}
+ 
+/* E. Navigation bar */
+nav {
+  background-color: #474644;
+  color: white;
+}
+ 
+/* F. No bullets on list items within the navigation (context selector) */
+nav li {
+  list-style-type: none;
+}
+ 
+/* G. Italic headings inside dish divs (context selector) */
+.dish h1, .dish h2, .dish h3, .dish h4, .dish h5, .dish h6 {
+  font-style: italic;
+}
+ 
+/* I. Arrow bullets for the location list only (id selector) */
+#locationList {
+  list-style-image: url("../images/arrow.gif");
+}
+ 
+/* J. Visited links (pseudo-class selector) */
+a:visited {
+  color: green;
+}
+ 
+/* K. Visited links inside the navigation (context + pseudo-class selector) */
+nav a:visited {
+  color: orange;
+  text-decoration: none;
+}
+ 
+/* L. "More details" text inside dish divs (context + class selector) */
+.dish .moreDetails {
+  color: red;
+}
+ 
+/* M. "This page coming soon" paragraphs (class selector) */
+.underConstruction {
+  color: orange;
+  font-style: italic;
+}
+ 
